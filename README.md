@@ -17,7 +17,7 @@
 
 ## Sources ℹ️
 <div align="center" >
-    <img src="">
+    <img src="https://github.com/[IS2AI]/[KazSAnDRA]/[img]/blob/[main]/logo_2gis.jpeg">
     <img src="image2.jpg" alt="Image 2">
     <img src="image3.jpg" alt="Image 3">
     <img src="image4.jpg" alt="Image 4">
