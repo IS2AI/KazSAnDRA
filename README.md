@@ -66,10 +66,10 @@
 <table align="center">
     <tr align="center">
       <td colspan="2"><b>Source</b></td>
-      <td>⭐️★★★★</td>
-      <td>⭐️⭐️★★★</td>
-      <td>⭐️⭐️⭐️★★</td>
-      <td>⭐️⭐️⭐️⭐️★</td>
+      <td>⭐️</td>
+      <td>⭐️⭐️</td>
+      <td>⭐️⭐️⭐️</td>
+      <td>⭐️⭐️⭐️⭐️</td>
       <td>⭐️⭐️⭐️⭐️⭐️</td>
       <td><b>Total</b></td>
     </tr>
