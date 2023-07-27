@@ -15,6 +15,8 @@
   </a> 
 </p>
 
+<p align = "center">This repository provides a dataset and pre-trained models for the paper <br><a href = "https://arxiv.org/abs/2305.15749"><b>KazSAnDRA: Kazakh Sentiment Analysis Dataset of Reviews and Attitudes</b></a></p>
+
 ## Sources ℹ️
 
 <p align = "justify">The source data for our dataset came from six prominent services: <a href="https://2gis.kz/">2GIS</a>, a digital mapping and directory service providing detailed information about businesses and organizations; <a href="https://www.flip.kz/">Flip</a>, a Kazakhstan-based online marketplace for buying and selling various products; <a href="https://kaspi.kz/">Kaspi</a>, a financial and technology company in <a href="https://en.wikipedia.org/wiki/Kazakhstan">Kazakhstan</a> offering online marketplace and financial services;  <a href="https://kitap.kz/">Kitap</a>, an online library that serves as a comprehensive resource for books and audiobooks in the <a href="https://en.wikipedia.org/wiki/Kazakh_language">Kazakh language</a>; <a href="https://www.google.com/maps/">Google Maps</a>, a widely used mapping and navigation service worldwide; and <a href="https://play.google.com/">Google Play Store</a>, an online store for Android devices, offering a diverse range of applications, movies, music, e-books, and magazines.</p>
