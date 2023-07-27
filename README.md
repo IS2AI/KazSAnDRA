@@ -30,9 +30,10 @@
 </div>
 -->
 
+<!--
 <table align="center">
   <tr style="border: 0px;">
-    <td align="center" style="border: 0px;"><b>2GIS</b></td>
+    <td align="center" ><b>2GIS</b></td>
     <td align="center"><b>Flip</b></td>
     <td align="center"><b>Kaspi</b></td>
     <td align="center"><b>Kitap</b></td>
@@ -58,3 +59,82 @@
     <td align="center"><b>135,073</b></td>
   </tr>
 </table>
+-->
+
+<table align="center">
+    <tr align="center">
+      <td colspan="2"><b>Source</b></td>
+      <td>⭐️★★★★</td>
+      <td>⭐️⭐️★★★</td>
+      <td>⭐️⭐️⭐️★★</td>
+      <td>⭐️⭐️⭐️⭐️★</td>
+      <td>⭐️⭐️⭐️⭐️⭐️</td>
+      <td><b>Total</b></td>
+    </tr>
+   <tr></tr>
+    <tr align="center">
+      <td>2GIS</td>
+      <td><img src="img/logo_2gis.png" width="64" height="64" alt="2gis.kz logo"></td>
+      <td>701</td>
+      <td>179</td>
+      <td>140</td>
+      <td>172</td>
+      <td>3,464</td>
+      <td>4,656</td>
+    </tr>
+   <tr></tr>
+    <tr align="center">
+      <td>Flip</td>
+      <td><img src="img/logo_flip.png" width="64" height="64" alt="flip.kz logo"></td>
+      <td>41</td>
+      <td>46</td>
+      <td>117</td>
+      <td>230</td>
+      <td>1,508</td>
+      <td>1,942</td>
+    </tr>
+   <tr></tr>
+    <tr align="center">
+      <td>Kaspi</td>
+      <td><img src="img/logo_kaspi.png" width="64" height="64" alt="kaspi.kz logo"></td>
+      <td>901</td>
+      <td>269</td>
+      <td>696</td>
+      <td>2,292</td>
+      <td>20,841</td>
+      <td>24,999</td>
+    </tr>
+   <tr></tr>
+    <tr align="center">
+      <td>Kitap</td>
+      <td><img src="img/logo_kitap.png" width="64" height="64" alt="kitap.kz logo"></td>
+      <td>688</td>
+      <td>107</td>
+      <td>222</td>
+      <td>368</td>
+      <td>4,424</td>
+      <td>5,809</td>
+    </tr>
+   <tr></tr>
+    <tr align="center">
+      <td>Maps</td>
+      <td><img src="img/logo_maps.png" width="64" height="64" alt="google maps logo"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+   <tr></tr>
+    <tr align="center">
+      <td>Play</td>
+      <td><img src="img/logo_play.png" width="64" height="64" alt="google plays store logo"></td>
+      <td>22,547</td>
+      <td>4,202</td>
+      <td>5,758</td>
+      <td>7,949</td>
+      <td>94,617</td>
+      <td>135,073</td>
+    </tr>
+  </table>
