@@ -17,10 +17,10 @@
 
 ## Sources ℹ️
 <div align="center" >
-  <img src="img/logo_2gis-modified.png" width="64" height="64" alt="2gis.kz logo">
-  <img src="img/logo_flip-modified.png" width="64" height="64" alt="flip.kz logo">
-  <img src="img/logo_kaspi-modified.png" width="64" height="64" alt="kaspi.kz logo">
+  <img src="img/logo_2gis.png" width="64" height="64" alt="2gis.kz logo">
+  <img src="img/logo_flip.png" width="64" height="64" alt="flip.kz logo">
+  <img src="img/logo_kaspi.png" width="64" height="64" alt="kaspi.kz logo">
   <img src="img/logo_kitap.png" width="64" height="64" alt="kitap.kz logo">
-  <img src="img/logo_maps-modified.png" width="64" height="64" alt="google maps logo">
+  <img src="img/logo_maps.png" width="64" height="64" alt="google maps logo">
   <img src="img/logo_play.png" width="64" height="64" alt="google plays store logo">
 </div>
