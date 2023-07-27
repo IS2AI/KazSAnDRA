@@ -64,79 +64,152 @@
 -->
 
 <table align="center">
-    <tr align="center">
-      <td colspan="2"><b>Source</b></td>
-      <td>⭐️</td>
-      <td>⭐️⭐️</td>
-      <td>⭐️⭐️⭐️</td>
-      <td>⭐️⭐️⭐️⭐️</td>
-      <td>⭐️⭐️⭐️⭐️⭐️</td>
-      <td><b>Total</b></td>
-    </tr>
+  <tr align="center">
+    <td colspan="2"><b>Source</b></td>
+    <td>⭐️</td>
+    <td>⭐️⭐️</td>
+    <td>⭐️⭐️⭐️</td>
+    <td>⭐️⭐️⭐️⭐️</td>
+    <td>⭐️⭐️⭐️⭐️⭐️</td>
+    <td><b>Total</b></td>
+  </tr>
    <tr></tr>
-    <tr align="center">
-      <td>2GIS</td>
-      <td><img src="img/logo_2gis.png" width="64" height="64" alt="2gis.kz logo"></td>
-      <td>701</td>
-      <td>179</td>
-      <td>140</td>
-      <td>172</td>
-      <td>3,464</td>
-      <td>4,656</td>
-    </tr>
+  <tr align="center">
+    <td>2GIS</td>
+    <td><img src="img/logo_2gis.png" width="64" height="64" alt="2gis.kz logo"></td>
+    <td>701</td>
+    <td>179</td>
+    <td>140</td>
+    <td>172</td>
+    <td>3,464</td>
+    <td>4,656</td>
+  </tr>
    <tr></tr>
-    <tr align="center">
-      <td>Flip</td>
-      <td><img src="img/logo_flip.png" width="64" height="64" alt="flip.kz logo"></td>
-      <td>41</td>
-      <td>46</td>
-      <td>117</td>
-      <td>230</td>
-      <td>1,508</td>
-      <td>1,942</td>
-    </tr>
+  <tr align="center">
+    <td>Flip</td>
+    <td><img src="img/logo_flip.png" width="64" height="64" alt="flip.kz logo"></td>
+    <td>41</td>
+    <td>46</td>
+    <td>117</td>
+    <td>230</td>
+    <td>1,508</td>
+    <td>1,942</td>
+  </tr>
    <tr></tr>
-    <tr align="center">
-      <td>Kaspi</td>
-      <td><img src="img/logo_kaspi.png" width="64" height="64" alt="kaspi.kz logo"></td>
-      <td>901</td>
-      <td>269</td>
-      <td>696</td>
-      <td>2,292</td>
-      <td>20,841</td>
-      <td>24,999</td>
-    </tr>
+  <tr align="center">
+    <td>Kaspi</td>
+    <td><img src="img/logo_kaspi.png" width="64" height="64" alt="kaspi.kz logo"></td>
+    <td>901</td>
+    <td>269</td>
+    <td>696</td>
+    <td>2,292</td>
+    <td>20,841</td>
+    <td>24,999</td>
+  </tr>
    <tr></tr>
-    <tr align="center">
-      <td>Kitap</td>
-      <td><img src="img/logo_kitap.png" width="64" height="64" alt="kitap.kz logo"></td>
-      <td>688</td>
-      <td>107</td>
-      <td>222</td>
-      <td>368</td>
-      <td>4,424</td>
-      <td>5,809</td>
-    </tr>
+  <tr align="center">
+    <td>Kitap</td>
+    <td><img src="img/logo_kitap.png" width="64" height="64" alt="kitap.kz logo"></td>
+    <td>688</td>
+    <td>107</td>
+    <td>222</td>
+    <td>368</td>
+    <td>4,424</td>
+    <td>5,809</td>
+  </tr>
    <tr></tr>
-    <tr align="center">
-      <td>Maps</td>
-      <td><img src="img/logo_maps.png" width="64" height="64" alt="google maps logo"></td>
+  <tr align="center">
+    <td>Maps</td>
+    <td><img src="img/logo_maps.png" width="64" height="64" alt="google maps logo"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+   <tr></tr>
+  <tr align="center">
+    <td>Play</td>
+    <td><img src="img/logo_play.png" width="64" height="64" alt="google plays store logo"></td>
+    <td>22,547</td>
+    <td>4,202</td>
+    <td>5,758</td>
+    <td>7,949</td>
+    <td>94,617</td>
+    <td>135,073</td>
+    </tr>
+  <tr></tr>
+  <tr align="center">
+      <td colspan="2"><b>Total</b></td>
       <td></td>
       <td></td>
       <td></td>
       <td></td>
       <td></td>
       <td></td>
-    </tr>
-   <tr></tr>
-    <tr align="center">
-      <td>Play</td>
-      <td><img src="img/logo_play.png" width="64" height="64" alt="google plays store logo"></td>
-      <td>22,547</td>
-      <td>4,202</td>
-      <td>5,758</td>
-      <td>7,949</td>
-      <td>94,617</td>
-      <td>135,073</td>
     </tr>
   </table>
+
+## Review Variations 🔀
+
+<p align = "justify">In Kazakhstan, people often switch between speaking Kazakh and Russian. There is also a trend of moving from using the <a href="https://en.wikipedia.org/wiki/Cyrillic_script>Cyrillic</a> to the <a href="https://en.wikipedia.org/wiki/Latin_script">Latin script</a>. As a result, the Kazakh reviews in our dataset can take various forms: (a) purely Kazakh words written in the Kazakh Cyrillic script, (b) Kazakh words in the Latin script, (c) a mix of Cyrillic and Latin characters, (d) a mix of Russian and Kazakh words, or (e) entirely in Cyrillic with Russian characters instead of Kazakh ones.</p>
+
+<table align="center">
+  <tr align="center">
+    <td></td>
+    <td><b>Actual review</b></td>
+    <td><b>Correct form</b></td>
+    <td><b>English translation</b></td>
+  </tr>
+  <tr></tr>
+  <tr align="center">
+    <td>a</td>
+    <td>керемет кітап</td>
+    <td>керемет кітап</td>
+    <td>a wonderful book</td>
+  </tr>
+  <tr></tr>
+  <tr align="center">
+    <td>b</td>
+    <td>keremet</td>
+    <td>керемет</td>
+    <td>wonderful</td>
+  </tr>
+  <tr></tr>
+  <tr align="center">
+    <td>c</td>
+    <td>jok кітап</td>
+    <td>кітап жоқ</td>
+    <td>no books</td>
+  </tr>
+  <tr></tr>
+  <tr align="center">
+    <td>d</td>
+    <td>Осы приложениеге көп рахмет!</td>
+    <td>Осы қолданбаға көп рақмет!</td>
+    <td>Many thanks to this app!</td>
+  </tr>
+  <tr></tr>
+  <tr align="center">
+    <td>e</td>
+    <td>Кушти!</td>
+    <td>Күшті!</td>
+    <td>Great!</td>
+  </tr>
+</table>
+
+## Data Preprocessing 🔧
+
+<p align = "justify">During the data preprocessing stage, the following steps were undertaken:</p>
+
+- Removal of emojis 🤓
+- Lowercasing all reviews 🔠 ➙ 🔡
+- Removal of punctuation marks ⁉️
+- Removal of newline (\n), tab (\t), and carriage return (\r) characters ⇥ ↵
+- Replacement of multiple spaces with a single space ␣
+- Reduction of consecutive recurring characters to a single instance (e.g., "кееррреемееетт" to "керемет") 🔂
+- Removal of duplicate entries (i.e., reviews with the same score) 👯‍♂️
+
+## Data Partitioning 🧩
+
