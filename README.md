@@ -165,37 +165,37 @@
   <tr></tr>
   <tr align="center">
     <td>a</td>
-    <td>керемет кітап</td>
-    <td>керемет кітап</td>
-    <td>a wonderful book</td>
+    <td><i>керемет кітап<i/></td>
+    <td><i>керемет кітап<i/></td>
+    <td><i>a wonderful book<i/></td>
   </tr>
   <tr></tr>
   <tr align="center">
     <td>b</td>
-    <td>keremet</td>
-    <td>керемет</td>
-    <td>wonderful</td>
+    <td><i>keremet<i/></td>
+    <td><i>керемет<i/></td>
+    <td><i>wonderful<i/></td>
   </tr>
   <tr></tr>
   <tr align="center">
     <td>c</td>
-    <td>jok кітап</td>
-    <td>кітап жоқ</td>
-    <td>no books</td>
+    <td><i>jok кітап<i/></td>
+    <td><i>кітап жоқ<i/></td>
+    <td><i>no books<i/></td>
   </tr>
   <tr></tr>
   <tr align="center">
     <td>d</td>
-    <td>Осы приложениеге көп рахмет!</td>
-    <td>Осы қолданбаға көп рақмет!</td>
-    <td>Many thanks to this app!</td>
+    <td><i>Осы приложениеге көп рахмет!<i/></td>
+    <td><i>Осы қолданбаға көп рақмет!<i/></td>
+    <td><i>Many thanks to this app!<i/></td>
   </tr>
   <tr></tr>
   <tr align="center">
     <td>e</td>
-    <td>Кушти!</td>
-    <td>Күшті!</td>
-    <td>Great!</td>
+    <td><i>Кушти!<i/></td>
+    <td><i>Күшті!<i/></td>
+    <td><i>Great!<i/></td>
   </tr>
 </table>
 
