@@ -199,6 +199,16 @@
   </tr>
 </table>
 
+## Sentiment Classification Tasks 🕵️‍♂️
+
+<p align = "justify">we utilised KazSAnDRA for two distinct tasks:</p>
+
+1. polarity classification (PC), involving the prediction of whether a review is positive or negative:
+   - reviews with original scores of 1 or 2 were classified as negative and assigned a new score of 0,
+   - reviews with original scores of 4 or 5 were classified as positive and assigned a new score of 1,
+   - reviews with an original score of 3 were categorized as neutral and were excluded from the task.
+2. score classification (SC), where the objective was to predict the score of a review on a scale ranging from 1 to 5.
+
 ## Data Preprocessing 🔧
 
 <p align = "justify">During the data preprocessing stage, the following steps were undertaken:</p>
@@ -212,6 +222,460 @@
 - Removal of duplicate entries (i.e., reviews with the same score) 👯‍♂️
 
 ## Data Partitioning 🧩
+
+<p align = "justify">For the sake of maintaining consistency and facilitating reproducibility of our experimental outcomes among different research groups, we partitioned KaZSAnDRA into three distinct sets: training (train), validation (valid), and testing (test) sets, following an 80/10/10 ratio.</p>
+
+<table align="center">
+  <tr align="center">
+    <td rowspan="3"><b>Task</b></td>
+    <td colspan="2"><b>Train</b></td>
+    <td colspan="2"><b>Valid</b></td>
+    <td colspan="2"><b>Test</b></td>
+    <td colspan="2"><b>Total</b></td>
+  </tr>
+  <tr></tr>
+  <tr align="center">
+    <td><b>#</b></td>
+    <td><b>%</b></td>
+    <td><b>#</b></td>
+    <td><b>%</b></td>
+    <td><b>#</b></td>
+    <td><b>%</b></td>
+    <td><b>#</b></td>
+    <td><b>%</b></td>
+  </tr>
+   <tr></tr>
+  <tr align="center">
+    <td>PC</td>
+    <td>130,977</td>
+    <td>80</td>
+    <td>16,372</td>
+    <td>10</td>
+    <td>16,373</td>
+    <td>10</td>
+    <td>163,722</td>
+    <td>100</td>
+  </tr>
+  <tr></tr>
+  <tr align="center">
+    <td>SC</td>
+    <td>136,640</td>
+    <td>80</td>
+    <td>17,080</td>
+    <td>10</td>
+    <td>17,081</td>
+    <td>10</td>
+    <td>170,801</td>
+    <td>100</td>
+  </tr>
+</table>
+
+<p align = "justify">The distribution of reviews across the three sets based on their data sources and reviews for the PC task:</p>
+
+<table align="center">
+<thead>
+  <tr align="center">
+    <th rowspan="3">Source</th>
+    <th colspan="2">Train</th>
+    <th colspan="2">Valid</th>
+    <th colspan="2">Test</th>
+  </tr>
+  <tr></tr>
+  <tr align="center">
+    <th>#</th>
+    <th>%</th>
+    <th>#</th>
+    <th>%</th>
+    <th>#</th>
+    <th>%</th>
+  </tr>
+</thead>
+<tbody>
+  <tr align="center">
+    <td>Play</td>
+    <td>100,490</td>
+    <td>76.72</td>
+    <td>12,561</td>
+    <td>76.72</td>
+    <td>12,562</td>
+    <td>76.72</td>
+  </tr>
+  <tr></tr>
+  <tr align="center">
+    <td>Kaspi</td>
+    <td>18,822</td>
+    <td>14.37</td>
+    <td>2,353</td>
+    <td>14.37</td>
+    <td>2,353</td>
+    <td>14.37</td>
+  </tr>
+  <tr></tr>
+  <tr align="center">
+    <td>2gis</td>
+    <td>3,803</td>
+    <td>2.9</td>
+    <td>476</td>
+    <td>2.91</td>
+    <td>475</td>
+    <td>2.9</td>
+  </tr>
+  <tr></tr>
+  <tr align="center">
+    <td>Kitap</td>
+    <td>3,576</td>
+    <td>2.73</td>
+    <td>447</td>
+    <td>2.73</td>
+    <td>447</td>
+    <td>2.73</td>
+  </tr>
+  <tr></tr>
+  <tr align="center">
+    <td>Maps</td>
+    <td>2,932</td>
+    <td>2.24</td>
+    <td>366</td>
+    <td>2.24</td>
+    <td>367</td>
+    <td>2.24</td>
+  </tr>
+  <tr></tr>
+  <tr align="center">
+    <td>Flip</td>
+    <td>1,354</td>
+    <td>1.03</td>
+    <td>169</td>
+    <td>1.03</td>
+    <td>169</td>
+    <td>1.03</td>
+  </tr>
+  <tr></tr>
+  <tr align="center">
+    <td><b>Total</b></td>
+    <td><b>130,977</b></td>
+    <td><b>100</b></td>
+    <td><b>16,372</b></td>
+    <td><b>100</b></td>
+    <td><b>16,373</b></td>
+    <td><b>100</b></td>
+  </tr>
+</tbody>
+</table>
+
+<table align="center">
+<thead>
+  <tr>
+    <th rowspan="3">Score</th>
+    <th colspan="2">Train</th>
+    <th colspan="2">Valid</th>
+    <th colspan="2">Test</th>
+  </tr>
+  <tr></tr>
+  <tr align="center">
+    <th>#</th>
+    <th>%</th>
+    <th>#</th>
+    <th>%</th>
+    <th>#</th>
+    <th>%</th>
+  </tr>
+</thead>
+<tbody>
+  <tr align="center">
+    <td>1</td>
+    <td>107,243</td>
+    <td>81.88</td>
+    <td>13,404</td>
+    <td>81.87</td>
+    <td>13,407</td>
+    <td>81.88</td>
+  </tr>
+  <tr></tr>
+  <tr align="center">
+    <td>0</td>
+    <td>23,734</td>
+    <td>18.12</td>
+    <td>2,968</td>
+    <td>18.13</td>
+    <td>2,966</td>
+    <td>18.12</td>
+  </tr>
+  <tr></tr>
+  <tr align="center">
+    <td><b>Total</b></td>
+    <td><b>130,977</b></td>
+    <td><b>100</b></td>
+    <td><b>16,372</b></td>
+    <td><b>100</b></td>
+    <td><b>16,373</b></td>
+    <td><b>100</b></td>
+  </tr>
+</tbody>
+</table>
+
+<p align = "justify">The distribution of reviews across the three sets based on their data sources and reviews for the SC task:</p>
+
+<table align="center">
+<thead>
+  <tr align="center">
+    <th rowspan="3">Source</th>
+    <th colspan="2">Train</th>
+    <th colspan="2">Valid</th>
+    <th colspan="2">Test</th>
+  </tr>
+  <tr></tr>
+  <tr align="center">
+    <th>#</th>
+    <th>%</th>
+    <th>#</th>
+    <th>%</th>
+    <th>#</th>
+    <th>%</th>
+  </tr>
+</thead>
+<tbody>
+  <tr align="center">
+    <td>Play</td>
+    <td>105,051</td>
+    <td>76.88</td>
+    <td>13,131</td>
+    <td>76.88</td>
+    <td>13,134</td>
+    <td>76.89</td>
+  </tr>
+  <tr></tr>
+  <tr align="center">
+    <td>Kaspi</td>
+    <td>19,376</td>
+    <td>14.18</td>
+    <td>2,421</td>
+    <td>14.17</td>
+    <td>2,422</td>
+    <td>14.18</td>
+  </tr>
+  <tr></tr>
+  <tr align="center">
+    <td>2GIS</td>
+    <td>3,978</td>
+    <td>2.91</td>
+    <td>498</td>
+    <td>2.92</td>
+    <td>497</td>
+    <td>2.91</td>
+  </tr>
+  <tr></tr>
+  <tr align="center">
+    <td>Kitap</td>
+    <td>3,688</td>
+    <td>2.7</td>
+    <td>461</td>
+    <td>2.7</td>
+    <td>461</td>
+    <td>2.7</td>
+  </tr>
+  <tr></tr>
+  <tr align="center">
+    <td>Maps</td>
+    <td>3,104</td>
+    <td>2.27</td>
+    <td>388</td>
+    <td>2.27</td>
+    <td>388</td>
+    <td>2.27</td>
+  </tr>
+  <tr></tr>
+  <tr align="center">
+    <td>Flip</td>
+    <td>1,443</td>
+    <td>1.06</td>
+    <td>181</td>
+    <td>1.06</td>
+    <td>179</td>
+    <td>1.05</td>
+  </tr>
+  <tr></tr>
+  <tr align="center">
+    <td><b>Total</b></td>
+    <td><b>136,640</b></td>
+    <td><b>100</b></td>
+    <td><b>17,080</b></td>
+    <td><b>100</b></td>
+    <td><b>17,081</b></td>
+    <td><b>100</b></td>
+  </tr>
+</tbody>
+</table>
+
+<table align="center">
+<thead>
+  <tr>
+    <th rowspan="3">Score</th>
+    <th colspan="2">Train</th>
+    <th colspan="2">Valid</th>
+    <th colspan="2">Test</th>
+  </tr>
+  <tr></tr>
+  <tr align="center">
+    <th>#</th>
+    <th>%</th>
+    <th>#</th>
+    <th>%</th>
+    <th>#</th>
+    <th>%</th>
+  </tr>
+</thead>
+<tbody>
+  <tr align="center">
+    <td>5</td>
+    <td>98,363</td>
+    <td>71.99</td>
+    <td>12,294</td>
+    <td>71.98</td>
+    <td>12,297</td>
+    <td>71.99</td>
+  </tr>
+  <tr></tr>
+  <tr align="center">
+    <td>4</td>
+    <td>19,854</td>
+    <td>14.53</td>
+    <td>2,481</td>
+    <td>14.53</td>
+    <td>2,482</td>
+    <td>14.53</td>
+  </tr>
+  <tr></tr>
+  <tr align="center">
+    <td>3</td>
+    <td>8,880</td>
+    <td>6.5</td>
+    <td>1,110</td>
+    <td>6.5</td>
+    <td>1,110</td>
+    <td>6.5</td>
+  </tr>
+  <tr></tr>
+  <tr align="center">
+    <td>1</td>
+    <td>5,663</td>
+    <td>4.14</td>
+    <td>708</td>
+    <td>4.15</td>
+    <td>708</td>
+    <td>4.14</td>
+  </tr>
+  <tr></tr>
+  <tr align="center">
+    <td>2</td>
+    <td>3,880</td>
+    <td>2.84</td>
+    <td>487</td>
+    <td>2.85</td>
+    <td>484</td>
+    <td>2.83</td>
+  </tr>
+  <tr></tr>
+  <tr align="center">
+    <td><b>Total</b></td>
+    <td><b>136,640</b></td>
+    <td><b>100</b></td>
+    <td><b>17,080</b></td>
+    <td><b>100</b></td>
+    <td><b>17,081</b></td>
+    <td><b>100</b></td>
+  </tr>
+</tbody>
+</table>
+
+## Score Resampling ♻️
+
+<p align = "justify">To address the data imbalance in our training data, we employed random oversampling (ROS) and random undersampling (RUS) techniques, aiming to balance the representation of classes by creating new samples for the smaller class to align with the count of the majority class and eliminating samples from the larger class to match the count of the minority class.</p>
+
+<p align = "justify">The balanced training sets for the PC task:</p>
+
+<table align = "center">
+<thead>
+  <tr align = "center">
+    <th rowspan="3">Score</th>
+    <th colspan="2">Balanced</th>
+    <th rowspan="3">Imbalanced</th>
+  </tr>
+  <tr></tr>
+  <tr align = "center">
+    <th>OS</th>
+    <th>US</th>
+  </tr>
+</thead>
+<tbody>
+  <tr align = "center">
+    <td>0</td>
+    <td>107,243</td>
+    <td>23,734</td>
+    <td>23,734</td>
+  </tr>
+   <tr></tr>
+  <tr align = "center">
+    <td>1</td>
+    <td>107,243</td>
+    <td>23,734</td>
+    <td>107,243</td>
+  </tr>
+</tbody>
+</table>
+
+<p align = "justify">The balanced training sets for the SC task:</p>
+
+<table  align = "center">
+<thead>
+  <tr>
+    <th rowspan="3">Score</th>
+    <th colspan="2">Balanced</th>
+    <th rowspan="3">Imbalanced</th>
+  </tr>
+  <tr></tr>
+  <tr  align = "center">
+    <th>OS</th>
+    <th>US</th>
+  </tr>
+</thead>
+<tbody>
+  <tr  align = "center">
+    <td>1</td>
+    <td>98,363</td>
+    <td>3,880</td>
+    <td>19,854</td>
+  </tr>
+  <tr></tr>
+  <tr  align = "center">
+    <td>2</td>
+    <td>98,363</td>
+    <td>3,880</td>
+    <td>3,880</td>
+  </tr>
+  <tr></tr>
+  <tr  align = "center">
+    <td>3</td>
+    <td>98,363</td>
+    <td>3,880</td>
+    <td>5,663</td>
+  </tr>
+  <tr></tr>
+  <tr  align = "center">
+    <td>4</td>
+    <td>98,363</td>
+    <td>3,880</td>
+    <td>8,880</td>
+  </tr>
+  <tr></tr>
+  <tr  align = "center">
+    <td>5</td>
+    <td>98,363</td>
+    <td>3,880</td>
+    <td>98,363</td>
+  </tr>
+</tbody>
+</table>
 
 ## Dataset Structure 📁
 
