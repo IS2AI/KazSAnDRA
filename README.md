@@ -82,7 +82,7 @@
     <td>140</td>
     <td>172</td>
     <td>3,464</td>
-    <td>4,656</td>
+    <td><b>4,656</b></td>
   </tr>
    <tr></tr>
   <tr align="center">
@@ -93,7 +93,7 @@
     <td>117</td>
     <td>230</td>
     <td>1,508</td>
-    <td>1,942</td>
+    <td><b>1,942</b></td>
   </tr>
    <tr></tr>
   <tr align="center">
@@ -104,7 +104,7 @@
     <td>696</td>
     <td>2,292</td>
     <td>20,841</td>
-    <td>24,999</td>
+    <td><b>24,999</b></td>
   </tr>
    <tr></tr>
   <tr align="center">
@@ -115,18 +115,18 @@
     <td>222</td>
     <td>368</td>
     <td>4,424</td>
-    <td>5,809</td>
+    <td><b>5,809</b></td>
   </tr>
    <tr></tr>
   <tr align="center">
     <td>Maps</td>
     <td><img src="img/logo_maps.png" width="64" height="64" alt="google maps logo"></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>260</td>
+    <td>91</td>
+    <td>231</td>
+    <td>358</td>
+    <td>3,345</td>
+    <td><b>4,285</b></td>
   </tr>
    <tr></tr>
   <tr align="center">
@@ -137,17 +137,17 @@
     <td>5,758</td>
     <td>7,949</td>
     <td>94,617</td>
-    <td>135,073</td>
+    <td><b>135,073</b></td>
     </tr>
   <tr></tr>
   <tr align="center">
       <td colspan="2"><b>Total</b></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td><b>25,138</b></td>
+      <td><b>4,894</b></td>
+      <td><b>7,164</b></td>
+      <td><b>11,369</b></td>
+      <td><b>128,199</b></td>
+      <td><b>176,764</b></td>
     </tr>
   </table>
 
