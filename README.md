@@ -213,3 +213,12 @@
 
 ## Data Partitioning 🧩
 
+## Dataset Structure 📁
+
+<p align = "justify">The <a href="https://github.com/IS2AI/KazSAnDRA/tree/main/dataset">dataset</a> folder contains a collection of CSV files, distinguished by a two-digit prefix in their names. All the collected reviews are aggregated and stored within a unified file with the prefix "00". Additionally, the dataset includes six distinct files, numbered from "01" to "06", each explicitly annotated with the names of their respective sources, serving to indicate the origins of the reviews they contain.</p>
+
+<p align = "justify">Furthermore, the dataset encompasses three distinct sets: the training set, validation set, and test set, with the prefixes "07", "08", and "09", respectively. Notably, the training set exists in three variations, addressing the issue of data imbalance. These variations come with the suffix "ib", which contains the original imbalanced data, "os", representative of the balanced set achieved through oversampling techniques, and "us", which corresponds to the balanced set obtained through undersampling techniques.</p>
+
+<p align = "justify">The files labelled from 00 to 06 contain individual records, each consisting of three primary elements: the unaltered textual content of the review, the associated review score, which falls within the range of 1 to 5, and the specific source from which the review originated. These sources are identified by distinct entities such as "2gis", "flip", and others.</p>
+
+<p align = "justify">In contrast, the files denoted as 07 to 09 contain records with a slightly different composition. These records encompass the original, unprocessed text of the reviews, alongside the preprocessed version of the review text. Additionally, they include the corresponding review score, also ranging from 1 to 5, and the specific origin of each review, as previously indicated.</p>
