@@ -201,7 +201,7 @@
 
 ## Sentiment Classification Tasks 🕵️‍♂️
 
-<p align = "justify">we utilised KazSAnDRA for two distinct tasks:</p>
+<p align = "justify">We utilised KazSAnDRA for two distinct tasks:</p>
 
 1. polarity classification (PC), involving the prediction of whether a review is positive or negative:
    - reviews with original scores of 1 or 2 were classified as negative and assigned a new score of 0,
@@ -686,3 +686,13 @@
 <p align = "justify">Files from 00 to 06 contain individual records, each consisting of three primary elements: the unaltered textual content of the review, the associated review score, which falls within the range of 1 to 5, and the specific source from which the review originated. These sources are identified by distinct entities such as "2gis", "flip", and others.</p>
 
 <p align = "justify">On the other hand, files with numbering from 07 to 16 exhibit a distinct composition. With the exception of files carrying suffixes "ros" and "rus," these records encompass both the original, unprocessed text of the reviews and the preprocessed version of the review text. Furthermore, they incorporate the corresponding review score alongside the explicit origin of each review, as indicated earlier. Conversely, files labelled with "ros" and "rus" only contain the preprocessed version of the review text and its associated score.</p>
+
+## Sentiment Classification Models 🧠
+
+<p align = "justify">For the evaluation of KazSAnDRA, we utilised four multilingual machine learning models, all of which
+incorporated the Kazakh language and are accessible through the <a href = "https://huggingface.co/">Hugging Face</a> Transformers framework:</p>
+
+1. <a href = "https://huggingface.co/bert-base-multilingual-uncased">mBERT</a>
+2. <a href = "https://huggingface.co/xlm-roberta-base">XLM-R</a>
+3. <a href = "https://huggingface.co/google/rembert">RemBERT</a>
+4. <a href = "https://huggingface.co/facebook/mbart-large-50">mBART-50</a>
