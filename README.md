@@ -696,3 +696,22 @@ incorporated the Kazakh language and are accessible through the <a href = "https
 2. <a href = "https://huggingface.co/xlm-roberta-base">XLM-R</a>
 3. <a href = "https://huggingface.co/google/rembert">RemBERT</a>
 4. <a href = "https://huggingface.co/facebook/mbart-large-50">mBART-50</a>
+
+## Acknowledgements 🙏
+
+<p align = "justify">We express our sincere gratitude to Aizhan Seipanova, Alma Murzagulova, Almas Aitzhan, and Meiramgul Akanova, who served as moderators during the comprehensive review collection process. Their unwavering dedication, diligence, and remarkable patience significantly contributed to the successful completion of this endeavour.</p>
+
+## Citation 🎓
+
+<p align = "justify">We kindly urge you, if you incorporate our model into your work, to cite our paper as a gesture of recognition for its valuable contribution. The act of referencing the relevant sources not only upholds academic honesty but also ensures proper acknowledgment of the authors' efforts. Your citation in your research significantly contributes to the continuous progress and evolution of the scholarly realm. Your endorsement and acknowledgement of our endeavours are genuinely appreciated.
+
+```bibtex
+@misc{yeshpanov2023kazsandra,
+      title={KazSAnDRA: Kazakh Sentiment Analysis Dataset of Reviews and Attitudes}, 
+      author={Rustem Yeshpanov and Huseyin Atakan Varol},
+      year={2023},
+      eprint={},
+      archivePrefix={arXiv},
+      primaryClass={}
+}
+```
