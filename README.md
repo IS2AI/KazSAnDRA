@@ -339,7 +339,7 @@
 <table align="center">
 <thead>
   <tr align="center">
-    <th rowspan="3">Source</th>
+    <th rowspan="3">Domain</th>
     <th colspan="2">Train</th>
     <th colspan="2">Valid</th>
     <th colspan="2">Test</th>
@@ -356,72 +356,52 @@
 </thead>
 <tbody>
   <tr align="center">
-    <td>Play</td>
-    <td>105,051</td>
-    <td>76.88</td>
-    <td>13,131</td>
-    <td>76.88</td>
-    <td>13,134</td>
-    <td>76.89</td>
+    <td>Appstore</td>
+    <td>106,058</td>
+    <td>75.69</td>
+    <td>13,258</td>
+    <td>75.69</td>
+    <td>13,257</td>
+    <td>75.69</td>
   </tr>
   <tr></tr>
   <tr align="center">
-    <td>Kaspi</td>
-    <td>19,376</td>
-    <td>14.18</td>
-    <td>2,421</td>
-    <td>14.17</td>
-    <td>2,422</td>
-    <td>14.18</td>
+    <td>Market</td>
+    <td>23,278</td>
+    <td>16.61</td>
+    <td>2,909</td>
+    <td>16.61</td>
+    <td>2,910</td>
+    <td>16.61</td>
   </tr>
   <tr></tr>
   <tr align="center">
-    <td>2GIS</td>
-    <td>3,978</td>
-    <td>2.91</td>
-    <td>498</td>
-    <td>2.92</td>
-    <td>497</td>
-    <td>2.91</td>
+    <td>Mapping</td>
+    <td>6,794</td>
+    <td>4.85</td>
+    <td>849</td>
+    <td>4.85</td>
+    <td>849</td>
+    <td>4.85</td>
   </tr>
   <tr></tr>
   <tr align="center">
-    <td>Kitap</td>
-    <td>3,688</td>
-    <td>2.7</td>
-    <td>461</td>
-    <td>2.7</td>
-    <td>461</td>
-    <td>2.7</td>
-  </tr>
-  <tr></tr>
-  <tr align="center">
-    <td>Maps</td>
-    <td>3,104</td>
-    <td>2.27</td>
-    <td>388</td>
-    <td>2.27</td>
-    <td>388</td>
-    <td>2.27</td>
-  </tr>
-  <tr></tr>
-  <tr align="center">
-    <td>Flip</td>
-    <td>1,443</td>
-    <td>1.06</td>
-    <td>181</td>
-    <td>1.06</td>
-    <td>179</td>
-    <td>1.05</td>
+    <td>Bookstore</td>
+    <td>3,996</td>
+    <td>2.85</td>
+    <td>500</td>
+    <td>2.85</td>
+    <td>500</td>
+    <td>2.85</td>
   </tr>
   <tr></tr>
   <tr align="center">
     <td><b>Total</b></td>
-    <td><b>136,640</b></td>
+    <td><b>140,126</b></td>
     <td><b>100</b></td>
-    <td><b>17,080</b></td>
+    <td><b>17,516</b></td>
     <td><b>100</b></td>
-    <td><b>17,081</b></td>
+    <td><b>17,516</b></td>
     <td><b>100</b></td>
   </tr>
 </tbody>
@@ -448,61 +428,61 @@
 <tbody>
   <tr align="center">
     <td>5</td>
-    <td>98,363</td>
-    <td>71.99</td>
-    <td>12,294</td>
-    <td>71.98</td>
-    <td>12,297</td>
-    <td>71.99</td>
-  </tr>
-  <tr></tr>
-  <tr align="center">
-    <td>4</td>
-    <td>19,854</td>
-    <td>14.53</td>
-    <td>2,481</td>
-    <td>14.53</td>
-    <td>2,482</td>
-    <td>14.53</td>
-  </tr>
-  <tr></tr>
-  <tr align="center">
-    <td>3</td>
-    <td>8,880</td>
-    <td>6.5</td>
-    <td>1,110</td>
-    <td>6.5</td>
-    <td>1,110</td>
-    <td>6.5</td>
+    <td>101,302</td>
+    <td>72.29</td>
+    <td>12,663</td>
+    <td>72.29</td>
+    <td>12,663</td>
+    <td>72.29</td>
   </tr>
   <tr></tr>
   <tr align="center">
     <td>1</td>
-    <td>5,663</td>
-    <td>4.14</td>
-    <td>708</td>
-    <td>4.15</td>
-    <td>708</td>
-    <td>4.14</td>
+    <td>20,031</td>
+    <td>14.29</td>
+    <td>2,504</td>
+    <td>14.30</td>
+    <td>2,504</td>
+    <td>14.30</td>
+  </tr>
+  <tr></tr>
+  <tr align="center">
+    <td>4</td>
+    <td>9,115</td>
+    <td>6.50</td>
+    <td>1,140</td>
+    <td>6.51</td>
+    <td>1,139</td>
+    <td>6.50</td>
+  </tr>
+  <tr></tr>
+  <tr align="center">
+    <td>3</td>
+    <td>5,758</td>
+    <td>4.11</td>
+    <td>719</td>
+    <td>4.10</td>
+    <td>720</td>
+    <td>4.11</td>
   </tr>
   <tr></tr>
   <tr align="center">
     <td>2</td>
-    <td>3,880</td>
-    <td>2.84</td>
-    <td>487</td>
-    <td>2.85</td>
-    <td>484</td>
-    <td>2.83</td>
+    <td>3,920</td>
+    <td>2.80</td>
+    <td>490</td>
+    <td>2.80</td>
+    <td>490</td>
+    <td>2.80</td>
   </tr>
   <tr></tr>
   <tr align="center">
     <td><b>Total</b></td>
-    <td><b>136,640</b></td>
+    <td><b>140,126</b></td>
     <td><b>100</b></td>
-    <td><b>17,080</b></td>
+    <td><b>17,516</b></td>
     <td><b>100</b></td>
-    <td><b>17,081</b></td>
+    <td><b>17,517</b></td>
     <td><b>100</b></td>
   </tr>
 </tbody>
@@ -530,16 +510,16 @@
 <tbody>
   <tr align = "center">
     <td>0</td>
-    <td>107,243</td>
-    <td>23,734</td>
-    <td>23,734</td>
+    <td>110,417</td>
+    <td>23,951</td>
+    <td>23,951</td>
   </tr>
    <tr></tr>
   <tr align = "center">
     <td>1</td>
-    <td>107,243</td>
-    <td>23,734</td>
-    <td>107,243</td>
+    <td>110,417</td>
+    <td>23,951</td>
+    <td>110,417</td>
   </tr>
 </tbody>
 </table>
@@ -562,37 +542,37 @@
 <tbody>
   <tr  align = "center">
     <td>1</td>
-    <td>98,363</td>
-    <td>3,880</td>
-    <td>19,854</td>
+    <td>101,302</td>
+    <td>3,920</td>
+    <td>20,031</td>
   </tr>
   <tr></tr>
   <tr  align = "center">
     <td>2</td>
-    <td>98,363</td>
-    <td>3,880</td>
-    <td>3,880</td>
+    <td>101,302</td>
+    <td>3,920</td>
+    <td>3,920</td>
   </tr>
   <tr></tr>
   <tr  align = "center">
     <td>3</td>
-    <td>98,363</td>
-    <td>3,880</td>
-    <td>5,663</td>
+    <td>101,302</td>
+    <td>3,920</td>
+    <td>5,758</td>
   </tr>
   <tr></tr>
   <tr  align = "center">
     <td>4</td>
-    <td>98,363</td>
-    <td>3,880</td>
-    <td>8,880</td>
+    <td>101,302</td>
+    <td>3,920</td>
+    <td>9,115</td>
   </tr>
   <tr></tr>
   <tr  align = "center">
     <td>5</td>
-    <td>98,363</td>
-    <td>3,880</td>
-    <td>98,363</td>
+    <td>101,302</td>
+    <td>3,920</td>
+    <td>101,302</td>
   </tr>
 </tbody>
 </table>
