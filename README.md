@@ -17,139 +17,79 @@
 
 <p align = "center">This repository provides a dataset and pre-trained models for the paper <br><a href = "https://arxiv.org/abs/2305.15749"><b>KazSAnDRA: Kazakh Sentiment Analysis Dataset of Reviews and Attitudes</b></a></p>
 
-## Sources ℹ️
+## Domains ℹ️
 
-<p align = "justify">The source data for our dataset came from six prominent services: <a href="https://2gis.kz/">2GIS</a>, a digital mapping and directory service providing detailed information about businesses and organizations; <a href="https://www.flip.kz/">Flip</a>, a Kazakhstan-based online marketplace for buying and selling various products; <a href="https://kaspi.kz/">Kaspi</a>, a financial and technology company in <a href="https://en.wikipedia.org/wiki/Kazakhstan">Kazakhstan</a> offering online marketplace and financial services;  <a href="https://kitap.kz/">Kitap</a>, an online library that serves as a comprehensive resource for books and audiobooks in the <a href="https://en.wikipedia.org/wiki/Kazakh_language">Kazakh language</a>; <a href="https://www.google.com/maps/">Google Maps</a>, a widely used mapping and navigation service worldwide; and <a href="https://play.google.com/">Google Play Store</a>, an online store for Android devices, offering a diverse range of applications, movies, music, e-books, and magazines.</p>
+<p align = "justify">The source data for our dataset came from four domains:</p> 
 
-<!--
-<div align="center">
-  <img src="img/logo_2gis.png" width="64" height="64" alt="2gis.kz logo">
-  <img src="img/logo_flip.png" width="64" height="64" alt="flip.kz logo">
-  <img src="img/logo_kaspi.png" width="64" height="64" alt="kaspi.kz logo">
-  <img src="img/logo_kitap.png" width="64" height="64" alt="kitap.kz logo">
-  <img src="img/logo_maps.png" width="64" height="64" alt="google maps logo">
-  <img src="img/logo_play.png" width="64" height="64" alt="google plays store logo">
-</div>
--->
-
-<!--
-<table align="center">
-  <tr style="border: 0px;">
-    <td align="center" ><b>2GIS</b></td>
-    <td align="center"><b>Flip</b></td>
-    <td align="center"><b>Kaspi</b></td>
-    <td align="center"><b>Kitap</b></td>
-    <td align="center"><b>Maps</b></td>
-    <td align="center"><b>Play</b></td>
-  </tr>
-  <tr></tr>
-  <tr>
-    <td><img src="img/logo_2gis.png" width="64" height="64" alt="2gis.kz logo"></td>
-    <td><img src="img/logo_flip.png" width="64" height="64" alt="flip.kz logo"></td>
-    <td><img src="img/logo_kaspi.png" width="64" height="64" alt="kaspi.kz logo"></td>
-    <td><img src="img/logo_kitap.png" width="64" height="64" alt="kitap.kz logo"></td>
-    <td><img src="img/logo_maps.png" width="64" height="64" alt="google maps logo"></td>
-    <td><img src="img/logo_play.png" width="64" height="64" alt="google plays store logo"></td>
-  </tr>
-  <tr></tr>
-  <tr>
-    <td align="center"><b>4,656</b></td>
-    <td align="center"><b>1,942</b></td>
-    <td align="center"><b>24,999</b></td>
-    <td align="center"><b>5,809</b></td>
-    <td align="center"><b>XXXX</b></td>
-    <td align="center"><b>135,073</b></td>
-  </tr>
-</table>
--->
+1. an online store for Android devices that offers a diverse range of applications (hereafter Appstore),
+2. an online library that serves as a source of books and audiobooks in Kazakh (hereafter Bookstore)
+3. digital mapping and navigation services (hereafter Mapping), 
+4. online marketplaces (hereafter Market).
 
 <table align="center">
+<thead align="center">
   <tr align="center">
-    <td colspan="2"><b>Source</b></td>
-    <td>⭐️</td>
-    <td>⭐️⭐️</td>
-    <td>⭐️⭐️⭐️</td>
-    <td>⭐️⭐️⭐️⭐️</td>
-    <td>⭐️⭐️⭐️⭐️⭐️</td>
-    <td><b>Total</b></td>
+    <th>Domain</th>
+    <th>⭐️</th>
+    <th>⭐️⭐️</th>
+    <th>⭐️⭐️⭐️</th>
+    <th>⭐️⭐️⭐️⭐️</th>
+    <th>⭐️⭐️⭐️⭐️⭐️</th>
+    <th>Total</th>
   </tr>
-   <tr></tr>
+</thead>
+<tbody>
   <tr align="center">
-    <td>2GIS</td>
-    <td><img src="img/logo_2gis.png" width="64" height="64" alt="2gis.kz logo"></td>
-    <td>701</td>
-    <td>179</td>
-    <td>140</td>
-    <td>172</td>
-    <td>3,464</td>
-    <td><b>4,656</b></td>
-  </tr>
-   <tr></tr>
-  <tr align="center">
-    <td>Flip</td>
-    <td><img src="img/logo_flip.png" width="64" height="64" alt="flip.kz logo"></td>
-    <td>41</td>
-    <td>46</td>
-    <td>117</td>
-    <td>230</td>
-    <td>1,508</td>
-    <td><b>1,942</b></td>
-  </tr>
-   <tr></tr>
-  <tr align="center">
-    <td>Kaspi</td>
-    <td><img src="img/logo_kaspi.png" width="64" height="64" alt="kaspi.kz logo"></td>
-    <td>901</td>
-    <td>269</td>
-    <td>696</td>
-    <td>2,292</td>
-    <td>20,841</td>
-    <td><b>24,999</b></td>
-  </tr>
-   <tr></tr>
-  <tr align="center">
-    <td>Kitap</td>
-    <td><img src="img/logo_kitap.png" width="64" height="64" alt="kitap.kz logo"></td>
-    <td>688</td>
-    <td>107</td>
-    <td>222</td>
-    <td>368</td>
-    <td>4,424</td>
-    <td><b>5,809</b></td>
-  </tr>
-   <tr></tr>
-  <tr align="center">
-    <td>Maps</td>
-    <td><img src="img/logo_maps.png" width="64" height="64" alt="google maps logo"></td>
-    <td>260</td>
-    <td>91</td>
-    <td>231</td>
-    <td>358</td>
-    <td>3,345</td>
-    <td><b>4,285</b></td>
-  </tr>
-   <tr></tr>
-  <tr align="center">
-    <td>Play</td>
-    <td><img src="img/logo_play.png" width="64" height="64" alt="google plays store logo"></td>
+    <td>Appstore</td>
     <td>22,547</td>
     <td>4,202</td>
     <td>5,758</td>
     <td>7,949</td>
     <td>94,617</td>
-    <td><b>135,073</b></td>
-    </tr>
+    <td>135,073</td>
+  </tr>
   <tr></tr>
   <tr align="center">
-      <td colspan="2"><b>Total</b></td>
-      <td><b>25,138</b></td>
-      <td><b>4,894</b></td>
-      <td><b>7,164</b></td>
-      <td><b>11,369</b></td>
-      <td><b>128,199</b></td>
-      <td><b>176,764</b></td>
-    </tr>
-  </table>
+    <td>Bookstore</td>
+    <td>686</td>
+    <td>107</td>
+    <td>222</td>
+    <td>368</td>
+    <td>4,422</td>
+    <td>5,805</td>
+  </tr>
+  <tr></tr>
+  <tr align="center">
+    <td>Mapping</td>
+    <td>959</td>
+    <td>270</td>
+    <td>369</td>
+    <td>525</td>
+    <td>6,774</td>
+    <td>8,897</td>
+  </tr>
+  <tr></tr>
+  <tr align="center">
+    <td>Market</td>
+    <td>1,043</td>
+    <td>350</td>
+    <td>913</td>
+    <td>2,775</td>
+    <td>25,208</td>
+    <td>30,289</td>
+  </tr>
+  <tr></tr>
+  <tr align="center">
+    <td><b>Total</b></td>
+    <td><b>25,235</b></td>
+    <td><b>4,929</b></td>
+    <td><b>7,262</b></td>
+    <td><b>11,617</b></td>
+    <td><b>131,021</b></td>
+    <td><b>180,064</b></td>
+  </tr>
+</tbody>
+</table>
 
 ## Review Variations 🔀
 
@@ -218,8 +158,8 @@
 - Removal of punctuation marks ⁉️
 - Removal of newline (\n), tab (\t), and carriage return (\r) characters ⇥ ↵
 - Replacement of multiple spaces with a single space ␣
-- Reduction of consecutive recurring characters to a single instance (e.g., "кееррреемееетт" to "керемет") 🔂
-- Removal of duplicate entries (i.e., reviews with the same score) 👯‍♂️
+- Reduction of consecutive recurring characters to two single instances (e.g., "кееррреемееетт" to "кеерреемеетт") 🔂
+- Removal of duplicate entries (i.e., reviews sharing identical text and scores) 👯‍♂️
 
 ## Data Partitioning 🧩
 
@@ -247,35 +187,35 @@
    <tr></tr>
   <tr align="center">
     <td>PC</td>
-    <td>130,977</td>
+    <td>134,368</td>
     <td>80</td>
-    <td>16,372</td>
+    <td>16,796</td>
     <td>10</td>
-    <td>16,373</td>
+    <td>16,797</td>
     <td>10</td>
-    <td>163,722</td>
+    <td>167,961</td>
     <td>100</td>
   </tr>
   <tr></tr>
   <tr align="center">
     <td>SC</td>
-    <td>136,640</td>
+    <td>140,126</td>
     <td>80</td>
-    <td>17,080</td>
+    <td>17,516</td>
     <td>10</td>
-    <td>17,081</td>
+    <td>17,516</td>
     <td>10</td>
-    <td>170,801</td>
+    <td>175,158</td>
     <td>100</td>
   </tr>
 </table>
 
-<p align = "justify">The distribution of reviews across the three sets based on their data sources and reviews for the PC task:</p>
+<p align = "justify">The distribution of reviews across the three sets based on their domains and scores for the PC task:</p>
 
 <table align="center">
 <thead>
   <tr align="center">
-    <th rowspan="3">Source</th>
+    <th rowspan="3">Domain</th>
     <th colspan="2">Train</th>
     <th colspan="2">Valid</th>
     <th colspan="2">Test</th>
@@ -292,72 +232,52 @@
 </thead>
 <tbody>
   <tr align="center">
-    <td>Play</td>
-    <td>100,490</td>
-    <td>76.72</td>
-    <td>12,561</td>
-    <td>76.72</td>
-    <td>12,562</td>
-    <td>76.72</td>
+    <td>Appstore</td>
+    <td>101,477</td>
+    <td>75.52</td>
+    <td>12,685</td>
+    <td>75.52</td>
+    <td>12,685</td>
+    <td>75.52</td>
   </tr>
   <tr></tr>
   <tr align="center">
-    <td>Kaspi</td>
-    <td>18,822</td>
-    <td>14.37</td>
-    <td>2,353</td>
-    <td>14.37</td>
-    <td>2,353</td>
-    <td>14.37</td>
+    <td>Market</td>
+    <td>22,561</td>
+    <td>16.79</td>
+    <td>2,820</td>
+    <td>16.79</td>
+    <td>2,820</td>
+    <td>16.79</td>
   </tr>
   <tr></tr>
   <tr align="center">
-    <td>2gis</td>
-    <td>3,803</td>
-    <td>2.9</td>
-    <td>476</td>
-    <td>2.91</td>
-    <td>475</td>
-    <td>2.9</td>
+    <td>Mapping</td>
+    <td>6,509</td>
+    <td>4.84</td>
+    <td>813</td>
+    <td>4.84</td>
+    <td>814</td>
+    <td>4.85</td>
   </tr>
   <tr></tr>
   <tr align="center">
-    <td>Kitap</td>
-    <td>3,576</td>
-    <td>2.73</td>
-    <td>447</td>
-    <td>2.73</td>
-    <td>447</td>
-    <td>2.73</td>
-  </tr>
-  <tr></tr>
-  <tr align="center">
-    <td>Maps</td>
-    <td>2,932</td>
-    <td>2.24</td>
-    <td>366</td>
-    <td>2.24</td>
-    <td>367</td>
-    <td>2.24</td>
-  </tr>
-  <tr></tr>
-  <tr align="center">
-    <td>Flip</td>
-    <td>1,354</td>
-    <td>1.03</td>
-    <td>169</td>
-    <td>1.03</td>
-    <td>169</td>
-    <td>1.03</td>
+    <td>Bookstore</td>
+    <td>3,821</td>
+    <td>2.84</td>
+    <td>478</td>
+    <td>2.85</td>
+    <td>478</td>
+    <td>2.85</td>
   </tr>
   <tr></tr>
   <tr align="center">
     <td><b>Total</b></td>
-    <td><b>130,977</b></td>
+    <td><b>134,368</b></td>
     <td><b>100</b></td>
-    <td><b>16,372</b></td>
+    <td><b>16,796</b></td>
     <td><b>100</b></td>
-    <td><b>16,373</b></td>
+    <td><b>16,797</b></td>
     <td><b>100</b></td>
   </tr>
 </tbody>
@@ -384,37 +304,37 @@
 <tbody>
   <tr align="center">
     <td>1</td>
-    <td>107,243</td>
-    <td>81.88</td>
-    <td>13,404</td>
-    <td>81.87</td>
-    <td>13,407</td>
-    <td>81.88</td>
+    <td>110,417</td>
+    <td>82.18</td>
+    <td>13,801</td>
+    <td>82.17</td>
+    <td>13,804</td>
+    <td>82.18</td>
   </tr>
   <tr></tr>
   <tr align="center">
     <td>0</td>
-    <td>23,734</td>
-    <td>18.12</td>
-    <td>2,968</td>
-    <td>18.13</td>
-    <td>2,966</td>
-    <td>18.12</td>
+    <td>23,951</td>
+    <td>17.82</td>
+    <td>2,995</td>
+    <td>17.83</td>
+    <td>2,993</td>
+    <td>17.82</td>
   </tr>
   <tr></tr>
   <tr align="center">
     <td><b>Total</b></td>
-    <td><b>130,977</b></td>
+    <td><b>134,368</b></td>
     <td><b>100</b></td>
-    <td><b>16,372</b></td>
+    <td><b>16,796</b></td>
     <td><b>100</b></td>
-    <td><b>16,373</b></td>
+    <td><b>16,797</b></td>
     <td><b>100</b></td>
   </tr>
 </tbody>
 </table>
 
-<p align = "justify">The distribution of reviews across the three sets based on their data sources and reviews for the SC task:</p>
+<p align = "justify">The distribution of reviews across the three sets based on their domains and scores for the SC task:</p>
 
 <table align="center">
 <thead>
