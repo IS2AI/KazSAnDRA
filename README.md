@@ -583,13 +583,375 @@
 
 ## Sentiment Classification Models 🧠
 
-<p align = "justify">For the evaluation of KazSAnDRA, we utilised four multilingual machine learning models, all of which
-incorporated the Kazakh language and are accessible through the <a href = "https://huggingface.co/">Hugging Face</a> Transformers framework:</p>
+<p align = "justify">For the evaluation of KazSAnDRA, we utilised four multilingual machine learning models, all incorporating the Kazakh language and accessible through the <a href = "https://huggingface.co/">Hugging Face</a> Transformers framework:</p>
 
 1. <a href = "https://huggingface.co/bert-base-multilingual-uncased">mBERT</a>
 2. <a href = "https://huggingface.co/xlm-roberta-base">XLM-R</a>
 3. <a href = "https://huggingface.co/google/rembert">RemBERT</a>
 4. <a href = "https://huggingface.co/facebook/mbart-large-50">mBART-50</a>
+
+## Experimental Setup 🔬
+
+<p align = "justify">The models were fine-tuned using both the balanced and imbalanced training sets, while the hyperparameters were refined using the validation set. The final and most optimal models were evaluated on the test sets. The fine-tuning of the models was executed on a single A100 GPU hosted on an NVIDIA DGX A100 machine. The initial learning rate was set at 10<sup>-5</sup> the weight decay rate was set at 10<sup>-3</sup>. Early stopping was employed, executed when the F<sub>1</sub>-score exhibited no improvement for three consecutive epochs. We set the batch size to 32 (mBERT, XLM-R, RemBERT) or 16 (mBART-50) and applied 800 warm-up steps.</p>
+
+<table align = "center">
+<thead>
+  <tr align = "center">
+    <th rowspan="3">Model</th>
+    <th colspan="3">PC</th>
+    <th colspan="3">SC</th>
+  </tr>
+  <tr></tr>
+  <tr align = "center">
+    <th>ROS</th>
+    <th>RUS</th>
+    <th>IB</th>
+    <th>ROS</th>
+    <th>RUS</th>
+    <th>IB</th>
+  </tr>
+</thead>
+<tbody>
+  <tr align = "center">
+    <td><b>mBERT</b></td>
+    <td>4</td>
+    <td>7</td>
+    <td>6</td>
+    <td>8</td>
+    <td>10</td>
+    <td>11</td>
+  </tr>
+  <tr></tr>
+  <tr align = "center">
+    <td><b>XLM-R</b></td>
+    <td>5</td>
+    <td>7</td>
+    <td>5</td>
+    <td>4</td>
+    <td>9</td>
+    <td>16</td>
+  </tr>
+  <tr></tr>
+  <tr align = "center">
+    <td><b>RemBERT</b></td>
+    <td>4</td>
+    <td>5</td>
+    <td>5</td>
+    <td>6</td>
+    <td>6</td>
+    <td>9</td>
+  </tr>
+  <tr></tr>
+  <tr align = "center">
+    <td><b>mBART-50</b></td>
+    <td>5</td>
+    <td>7</td>
+    <td>5</td>
+    <td>8</td>
+    <td>7</td>
+    <td>5</td>
+  </tr>
+</tbody>
+</table>
+<p align = "center">Number of training epochs for models</p>
+
+## Performance Metrics
+<p align = "justify">Several conventional metrics were used to evaluate the performance of the models, including accuracy (A), precision (P), recall (R), and F<sub>1</sub>-score (F<sub>1</sub>). 
+Given the imbalanced nature of the dataset, where all classes carry equal importance, we opted for macro-averaging, calculated from the arithmetic (i.e., unweighted) mean of all F<sub>1</sub>-scores per class, and thus ensuring equal treatment of all classes during the evaluation, resulting in a stronger penalty if the model performs worse on minority classes.</p>
+
+## Experiment Results
+<table align = "center">
+<thead>
+  <tr align = "center">
+    <th rowspan="5">Model</th>
+    <th colspan="12">POLARITY CLASSIFICATION</th>
+  </tr>
+  <tr></tr>
+  <tr align = "center">
+    <th colspan="4">Balanced (ROS)</th>
+    <th colspan="4">Balanced (RUS)</th>
+    <th colspan="4">Imbalanced</th>
+  </tr>
+  <tr></tr>
+  <tr align = "center">
+    <th>A</th>
+    <th>P</th>
+    <th>R</th>
+    <th>F1</th>
+    <th>A</th>
+    <th>P</th>
+    <th>R</th>
+    <th>F1</th>
+    <th>A</th>
+    <th>P</th>
+    <th>R</th>
+    <th>F1</th>
+  </tr>
+</thead>
+<tbody>
+  <tr align = "center">
+    <td><b>mBERT</b></td>
+    <td>0.84</td>
+    <td>0.74</td>
+    <td>0.83</td>
+    <td>0.77</td>
+    <td>0.85</td>
+    <td>0.76</td>
+    <td>0.82</td>
+    <td>0.78</td>
+    <td>0.89</td>
+    <td>0.82</td>
+    <td>0.79</td>
+    <td>0.80</td>
+  </tr>
+  <tr></tr>
+  <tr align = "center">
+    <td><b>XLM-R</b></td>
+    <td>0.86</td>
+    <td>0.76</td>
+    <td>0.83</td>
+    <td>0.79</td>
+    <td>0.85</td>
+    <td>0.75</td>
+    <td>0.83</td>
+    <td>0.78</td>
+    <td><b>0.89</b></td>
+    <td><b>0.81</b></td>
+    <td><b>0.81</b></td>
+    <td><b>0.81</b></td>
+  </tr>
+  <tr></tr>
+  <tr align = "center">
+    <td><b>RemBERT</b></td>
+    <td>0.88</td>
+    <td>0.79</td>
+    <td>0.82</td>
+    <td>0.81</td>
+    <td>0.87</td>
+    <td>0.78</td>
+    <td>0.82</td>
+    <td>0.80</td>
+    <td><b>0.89</b></td>
+    <td><b>0.81</b></td>
+    <td><b>0.82</b></td>
+    <td><b>0.81</b></td>
+  </tr>
+  <tr></tr>
+  <tr align = "center">
+    <td><b>mBART50</b></td>
+    <td>0.87</td>
+    <td>0.77</td>
+    <td>0.79</td>
+    <td>0.78</td>
+    <td>0.81</td>
+    <td>0.72</td>
+    <td>0.81</td>
+    <td>0.74</td>
+    <td>0.89</td>
+    <td>0.82</td>
+    <td>0.78</td>
+    <td>0.80</td>
+  </tr>
+</tbody>
+</table>
+<p align = "center">PC results on the test sets</p>
+
+<table align = "center">
+<thead>
+  <tr align = "center">
+    <th rowspan="5">Model</th>
+    <th colspan="12">SCORE CLASSIFICATION</th>
+  </tr>
+  <tr></tr>
+  <tr align = "center">
+    <th colspan="4">Balanced (ROS)</th>
+    <th colspan="4">Balanced (RUS)</th>
+    <th colspan="4">Imbalanced</th>
+  </tr>
+  <tr></tr>
+  <tr align = "center">
+    <th>A</th>
+    <th>P</th>
+    <th>R</th>
+    <th>F1</th>
+    <th>A</th>
+    <th>P</th>
+    <th>R</th>
+    <th>F1</th>
+    <th>A</th>
+    <th>P</th>
+    <th>R</th>
+    <th>F1</th>
+  </tr>
+</thead>
+<tbody>
+  <tr align = "center">
+    <td><b>mBERT</b></td>
+    <td>0.67</td>
+    <td>0.34</td>
+    <td>0.36</td>
+    <td>0.35</td>
+    <td>0.63</td>
+    <td>0.35</td>
+    <td>0.39</td>
+    <td>0.36</td>
+    <td>0.77</td>
+    <td>0.44</td>
+    <td>0.36</td>
+    <td>0.37</td>
+  </tr>
+  <tr></tr>
+  <tr align = "center">
+    <td><b>XLM-R</b></td>
+    <td>0.58</td>
+    <td>0.36</td>
+    <td>0.42</td>
+    <td>0.36</td>
+    <td>0.66</td>
+    <td>0.36</td>
+    <td>0.41</td>
+    <td>0.37</td>
+    <td><b>0.77</b></td>
+    <td><b>0.42</b></td>
+    <td><b>0.37</b></td>
+    <td><b>0.39</b></td>
+  </tr>
+  <tr></tr>
+  <tr align = "center">
+    <td><b>RemBERT</b></td>
+    <td>0.73</td>
+    <td>0.37</td>
+    <td>0.36</td>
+    <td>0.36</td>
+    <td>0.62</td>
+    <td>0.35</td>
+    <td>0.40</td>
+    <td>0.35</td>
+    <td><b>0.76</b></td>
+    <td><b>0.41</b></td>
+    <td><b>0.38</b></td>
+    <td><b>0.39</b></td>
+  </tr>
+  <tr></tr>
+  <tr align = "center">
+    <td><b>mBART50</b></td>
+    <td>0.74</td>
+    <td>0.36</td>
+    <td>0.34</td>
+    <td>0.35</td>
+    <td>0.55</td>
+    <td>0.36</td>
+    <td>0.41</td>
+    <td>0.34</td>
+    <td>0.77</td>
+    <td>0.42</td>
+    <td>0.37</td>
+    <td>0.38</td>
+  </tr>
+</tbody>
+</table>
+<p align = "center">SC results on the test sets</p>
+
+<table align = "center">
+<thead>
+  <tr align = "center">
+    <th colspan="4"><b>POLARITY CLASSIFICATION</b></th>
+  </tr>
+</thead>
+<tbody>
+  <tr align = "center">
+    <td><b>predicted &#8594;</b><br><b>actual &#8595;</b></td>
+    <td><b>0</td>
+    <td><b>1</td>
+    <td><b>Total</b></td>
+  </tr>
+  <tr></tr>
+  <tr align = "center">
+    <td><b>0</b></td>
+    <td>2,155</td>
+    <td>838</td>
+    <td>2,993</td>
+  </tr>
+  <tr></tr>
+  <tr align = "center">
+    <td><b>1</b></td>
+    <td>1,036</td>
+    <td>12,768</td>
+    <td>13,804</td>
+  </tr>
+</tbody>
+</table>
+<p align = "center">RemBERT PC results</p>
+
+<table align = "center">
+<thead>
+  <tr align = "center">
+    <th colspan="7"><b>SCORE CLASSIFICATION</b></th>
+  </tr>
+</thead>
+<tbody>
+  <tr align = "center">
+    <td><b>predicted &#8594;</b><br><b>actual &#8595;</b></td>
+    <td><b>1</b></td>
+    <td><b>2</b></td>
+    <td><b>3</b></td>
+    <td><b>4</b></td>
+    <td><b>5</b></td>
+    <td><b>Total</td>
+  </tr>
+  <tr></tr>
+  <tr align = "center">
+    <td><b>1</b></td>
+    <td>1,379</td>
+    <td>145</td>
+    <td>132</td>
+    <td>64</td>
+    <td>784</td>
+    <td>2,504</td>
+  </tr>
+  <tr></tr>
+  <tr align = "center">
+    <td><b>2</b></td>
+    <td>182</td>
+    <td>55</td>
+    <td>56</td>
+    <td>25</td>
+    <td>172</td>
+    <td>490</td>
+  </tr>
+  <tr></tr>
+  <tr align = "center">
+    <td><b>3</b></td>
+    <td>173</td>
+    <td>54</td>
+    <td>118</td>
+    <td>65</td>
+    <td>310</td>
+    <td>720</td>
+  </tr>
+  <tr></tr>
+  <tr align = "center">
+    <td><b>4</b></td>
+    <td>110</td>
+    <td>39</td>
+    <td>90</td>
+    <td>169</td>
+    <td>731</td>
+    <td>1,139</td>
+  </tr>
+  <tr></tr>
+  <tr align = "center">
+    <td><b>5</b></td>
+    <td>564</td>
+    <td>59</td>
+    <td>165</td>
+    <td>297</td>
+    <td>11,578</td>
+    <td>12,663</td>
+  </tr>
+</tbody>
+</table>
+<p align = "center">RemBERT SC results</p>
 
 ## Acknowledgements 🙏
 
