@@ -953,9 +953,109 @@ Given the imbalanced nature of the dataset, where all classes carry equal import
 </table>
 <p align = "center">RemBERT SC results</p>
 
+<table align = "center">
+<thead>
+  <tr align = "center">
+    <th rowspan="3">Domain</th>
+    <th colspan="4">PC</th>
+  </tr>
+  <tr></tr>
+  <tr align = "center">
+    <th>A</th>
+    <th>P</th>
+    <th>R</th>
+    <th>F1</th>
+  </tr>
+</thead>
+<tbody>
+  <tr align = "center">
+    <td>Appstore</td>
+    <td>0.87</td>
+    <td>0.80</td>
+    <td>0.81</td>
+    <td>0.80</td>
+  </tr>
+  <tr></tr>
+  <tr align = "center">
+    <td>Bookstore</td>
+    <td>0.86</td>
+    <td>0.75</td>
+    <td>0.80</td>
+    <td>0.77</td>
+  </tr>
+  <tr></tr>
+  <tr align = "center">
+    <td>Mapping</td>
+    <td>0.92</td>
+    <td>0.84</td>
+    <td>0.88</td>
+    <td>0.86</td>
+  </tr>
+  <tr></tr>
+  <tr align = "center">
+    <td>Market</td>
+    <td>0.97</td>
+    <td>0.84</td>
+    <td>0.91</td>
+    <td>0.87</td>
+  </tr>
+</tbody>
+</table>
+<p align = "center">RemBERT PC results by domain</p>
+
+<table align = "center">
+<thead>
+  <tr align = "center">
+    <th rowspan="3">Domain</th>
+    <th colspan="4">SC</th>
+  </tr>
+  <tr></tr>
+  <tr align = "center">
+    <th>A</th>
+    <th>P</th>
+    <th>R</th>
+    <th>F1</th>
+  </tr>
+</thead>
+<tbody>
+  <tr align = "center">
+    <td>Appstore</td>
+    <td>0.74</td>
+    <td>0.41</td>
+    <td>0.37</td>
+    <td>0.38</td>
+  </tr>
+  <tr></tr>
+  <tr align = "center">
+    <td>Bookstore</td>
+    <td>0.73</td>
+    <td>0.34</td>
+    <td>0.32</td>
+    <td>0.32</td>
+  </tr>
+  <tr></tr>
+  <tr align = "center">
+    <td>Mapping</td>
+    <td>0.80</td>
+    <td>0.42</td>
+    <td>0.41</td>
+    <td>0.41</td>
+  </tr>
+  <tr></tr>
+  <tr align = "center">
+    <td>Market</td>
+    <td>0.82</td>
+    <td>0.43</td>
+    <td>0.41</td>
+    <td>0.42</td>
+  </tr>
+</tbody>
+</table>
+<p align = "center">RemBERT SC results by domain</p>
+
 ## Acknowledgements 🙏
 
-<p align = "justify">We express our sincere gratitude to Aizhan Seipanova, Alma Murzagulova, Almas Aitzhan, and Meiramgul Akanova, who served as moderators during the comprehensive review collection process. Their unwavering dedication, diligence, and remarkable patience significantly contributed to the successful completion of this endeavour.</p>
+<p align = "justify">We sincerely thank Alma Murzagulova, Aizhan Seipanova, Meiramgul Akanova, Almas Aitzhan, Aigerim Boranbayeva, and Assel Kospabayeva, who acted as moderators during the review collection process. Their tireless efforts, diligence, and remarkable patience contributed significantly to the successful completion of this endeavour.</p>
 
 ## Citation 🎓
 
