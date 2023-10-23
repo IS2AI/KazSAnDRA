@@ -93,7 +93,7 @@
 
 ## Review Variations 🔀
 
-<p align = "justify">In Kazakhstan, people often switch between speaking Kazakh and Russian. There is also a trend of moving from using the <a href="https://en.wikipedia.org/wiki/Cyrillic_script">Cyrillic</a> to the <a href="https://en.wikipedia.org/wiki/Latin_script">Latin script</a>. As a result, the Kazakh reviews in our dataset can take various forms: (a) purely Kazakh words written in the Kazakh Cyrillic script, (b) Kazakh words in the Latin script, (c) a mix of Cyrillic and Latin characters, (d) a mix of Russian and Kazakh words, or (e) entirely in Cyrillic with Russian characters instead of Kazakh ones.</p>
+<p align = "justify">In Kazakhstan, people often switch between speaking Kazakh and Russian. There is also a trend of moving from using the <a href="https://en.wikipedia.org/wiki/Cyrillic_script">Cyrillic script</a> to the <a href="https://en.wikipedia.org/wiki/Latin_script">Latin script</a>. As a result, the Kazakh reviews in our dataset can take various forms: (a) purely Kazakh words written in the Kazakh Cyrillic script, (b) Kazakh words in the Latin script, (c) a mix of Cyrillic and Latin characters, (d) a mix of Russian and Kazakh words, or (e) entirely in Cyrillic with Russian characters instead of Kazakh ones.</p>
 
 <table align="center">
   <tr align="center">
