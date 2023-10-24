@@ -1078,7 +1078,7 @@ python predict.py
 
 ## Citation 🎓
 
-<p align = "justify">We kindly urge you, if you incorporate our model into your work, to cite our paper as a gesture of recognition for its valuable contribution. The act of referencing the relevant sources not only upholds academic honesty but also ensures proper acknowledgment of the authors' efforts. Your citation in your research significantly contributes to the continuous progress and evolution of the scholarly realm. Your endorsement and acknowledgement of our endeavours are genuinely appreciated.
+<p align = "justify">We kindly urge you, if you incorporate our model into your work, to cite our paper as a gesture of recognition for its valuable contribution. The act of referencing the relevant sources not only upholds academic honesty but also ensures proper acknowledgement of the authors' efforts. Your citation in your research significantly contributes to the continuous progress and evolution of the scholarly realm. Your endorsement and acknowledgement of our endeavours are genuinely appreciated.
 
 ```bibtex
 @misc{yeshpanov2023kazsandra,
