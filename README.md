@@ -664,21 +664,16 @@ Given the imbalanced nature of the dataset, where all classes carry equal import
 
 ```bash
 git clone https://github.com/IS2AI/KazSAnDRA.git
-cd KazSAnDRA/models
+cd KazSAnDRA/scripts
 pip install -r requirements.txt
 ```
 
-2. To fine-tune a model, select the necessary arguments in finetune.py and run:
+2. To fine-tune and evaluate a model, select the necessary arguments in finetune_evaluate.py and run:
 ```bash
-python finetune.py
+python finetune_evaluate.py
 ```
 
-3. To evaluate a model, select the necessary arguments in evalute.py and run:
-```bash
-python evaluate.py
-```
-
-4. To classify a review, select the necessary arguments in predict.py and run:
+3. To classify a review, select the necessary arguments in predict.py and run:
 ```bash
 python predict.py
 ```
