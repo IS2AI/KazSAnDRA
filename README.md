@@ -659,7 +659,7 @@
 <p align = "justify">Several conventional metrics were used to evaluate the performance of the models, including accuracy (A), precision (P), recall (R), and F<sub>1</sub>-score (F<sub>1</sub>). 
 Given the imbalanced nature of the dataset, where all classes carry equal importance, we opted for macro-averaging, calculated from the arithmetic (i.e., unweighted) mean of all F<sub>1</sub>-scores per class, and thus ensuring equal treatment of all classes during the evaluation, resulting in a stronger penalty if the model performs worse on minority classes.</p>
 
-## Model Fine-Tuning
+## Fine-Tuning, Evaluating, and Predicting Models
 1. Download this repository and install the required packages:
 
 ```bash
@@ -673,7 +673,7 @@ pip install -r requirements.txt
 python finetune_evaluate.py
 ```
 
-3. To classify a review, select the necessary arguments in predict.py and run:
+3. To classify a review, select the necessary arguments and add a review in predict.py and run:
 ```bash
 python predict.py
 ```
