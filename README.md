@@ -579,7 +579,7 @@
 
 ## Dataset Structure 📁
 
-<p align = "justify">The <a href="https://github.com/IS2AI/KazSAnDRA/tree/main/dataset">dataset</a> folder contains ten CSV files. Files "01" to "05" are associated with PC (polarity classification), while files "06" to "10" are related to SC (score classification). Different training set variations are indicated by the suffixes "ib" for imbalanced data, "ros" for random oversampling, and "rus" for random undersampling. Each file includes records containing a custom review identifier (<tt>custom_id</tt>), the original review text (<tt>text</tt>), the pre-processed review text (<tt>text_cleaned</tt>), the corresponding review score (<tt>label</tt>), and the domain information (<tt>domain</tt>).
+<p align = "justify">The <a href="https://github.com/IS2AI/KazSAnDRA/tree/main/dataset">dataset</a> folder contains ten ZIP files, each containing a CSV file. Files "01" to "05" are associated with PC (polarity classification), while files "06" to "10" are related to SC (score classification). To align with the enumeration used for labelling in the classifier, which starts from 0 rather than 1, labels 1-5 in the SC task were transformed into 0-4. Different training set variations are indicated by the suffixes "ib" for imbalanced data, "ros" for random oversampling, and "rus" for random undersampling. Each file includes records containing a custom review identifier (<tt>custom_id</tt>), the original review text (<tt>text</tt>), the pre-processed review text (<tt>text_cleaned</tt>), the corresponding review score (<tt>label</tt>), and the domain information (<tt>domain</tt>).
 
 ## Sentiment Classification Models 🧠
 
