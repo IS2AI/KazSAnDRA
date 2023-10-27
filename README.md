@@ -15,7 +15,7 @@
   </a> 
 </p>
 
-<p align = "center">This repository provides a <a href="https://github.com/IS2AI/KazSAnDRA/tree/main/dataset">dataset</a> and pre-trained polarity and score classification <a href="https://github.com/IS2AI/KazSAnDRA/tree/main/models">models</a> for the paper <br><a href = "link_to_be_added"><b>KazSAnDRA: Kazakh Sentiment Analysis Dataset of Reviews and Attitudes</b></a></p> 
+<p align = "center">This repository provides a <a href="https://github.com/IS2AI/KazSAnDRA/tree/main/dataset">dataset</a> and pre-trained polarity and score classification <a href="https://github.com/IS2AI/KazSAnDRA/tree/main/models">scripts</a> for the paper <br><a href = "link_to_be_added"><b>KazSAnDRA: Kazakh Sentiment Analysis Dataset of Reviews and Attitudes</b></a></p> 
 
 ## Domains ℹ️
 
