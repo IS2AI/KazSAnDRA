@@ -655,11 +655,11 @@
 </table>
 <p align = "center">Number of training epochs for models</p>
 
-## Performance Metrics
+## Performance Metrics 📏
 <p align = "justify">Several conventional metrics were used to evaluate the performance of the models, including accuracy (A), precision (P), recall (R), and F<sub>1</sub>-score (F<sub>1</sub>). 
 Given the imbalanced nature of the dataset, where all classes carry equal importance, we opted for macro-averaging, calculated from the arithmetic (i.e., unweighted) mean of all F<sub>1</sub>-scores per class, and thus ensuring equal treatment of all classes during the evaluation, resulting in a stronger penalty if the model performs worse on minority classes.</p>
 
-## Fine-Tuning, Evaluating, and Predicting Models
+## Fine-Tuning, Evaluating, and Predicting Models 🤖
 1. Download this repository and install the required packages:
 
 ```bash
@@ -678,7 +678,7 @@ python finetune_evaluate.py
 python predict.py
 ```
 
-## Experiment Results
+## Experiment Results 📊
 <table align = "center">
 <thead>
   <tr align = "center">
