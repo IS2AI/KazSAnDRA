@@ -1084,7 +1084,7 @@ python predict.py
 @misc{yeshpanov2024kazsandra,
       title={KazSAnDRA: Kazakh Sentiment Analysis Dataset of Reviews and Attitudes}, 
       author={Rustem Yeshpanov and Huseyin Atakan Varol},
-      year={2023},
+      year={2024},
       eprint={},
       archivePrefix={arXiv},
       primaryClass={}
