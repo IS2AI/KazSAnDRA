@@ -163,7 +163,7 @@
 
 ## Data Partitioning 🧩
 
-<p align = "justify">For the sake of maintaining consistency and facilitating reproducibility of our experimental outcomes among different research groups, we partitioned KaZSAnDRA into three distinct sets: training (train), validation (valid), and testing (test) sets, following an 80/10/10 ratio.</p>
+<p align = "justify">For the sake of maintaining consistency and facilitating reproducibility of our experimental outcomes among different research groups, we partitioned KazSAnDRA into three distinct sets: training (train), validation (valid), and testing (test) sets, following an 80/10/10 ratio.</p>
 
 <table align="center">
   <tr align="center">
