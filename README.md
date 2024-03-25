@@ -12,11 +12,8 @@
   <a href="https://issai.nu.edu.kz">
     <img src="https://img.shields.io/static/v1?label=ISSAI&amp;message=official site&amp;color=blue"
          alt="ISSAI Official Website">
-  </a> 
-</p>
-
-<p align="center">
-  🤗 
+  </a>
+<br> 🤗 <br>
   <a href="https://huggingface.co/datasets/issai/kazsandra">
     <img src="https://img.shields.io/static/v1?label=HF&amp;message=dataset&amp;color=yellow"
          alt="Hugging Face Dataset">
@@ -26,6 +23,7 @@
        alt="Hugging Face Model">
   </a>
 </p>
+
 
 <p align = "center">This repository provides a <a href="https://github.com/IS2AI/KazSAnDRA/tree/main/dataset">dataset</a> and pre-trained polarity and score classification <a href="https://github.com/IS2AI/KazSAnDRA/tree/main/scripts">models</a> for the paper <br><a href = "link_to_be_added"><b>KazSAnDRA: Kazakh Sentiment Analysis Dataset of Reviews and Attitudes</b></a></p> 
 
