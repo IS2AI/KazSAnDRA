@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://github.com/IS2AI/KazSAnDRA/stargazers">
-    <img src="https://img.shields.io/github/stars/IS2AI/KazSAnDRA.svg?colorA=orange&colorB=orange&logo=github"
+    <img src="https://img.shields.io/github/stars/is2ai/KazSAnDRA"
          alt="GitHub stars">
   </a>
   <a href="https://github.com/IS2AI/KazSAnDRA/issues">
