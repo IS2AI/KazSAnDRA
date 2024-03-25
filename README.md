@@ -10,7 +10,7 @@
          alt="GitHub issues">
   </a>
   <a href="https://issai.nu.edu.kz">
-    <img src="https://img.shields.io/static/v1?label=ISSAI&amp;message=official site&amp;color=blue&amp"
+    <img src="https://img.shields.io/static/v1?label=ISSAI&amp;message=official site&amp;color=blue"
          alt="ISSAI Official Website">
   </a> 
 </p>
