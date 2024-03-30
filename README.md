@@ -109,8 +109,8 @@
   <tr align="center">
     <td></td>
     <td><b>Actual review</b></td>
-    <td><b>Correct form</b></td>
-    <td><b>English translation</b></td>
+    <td><b>Correct form (Kazakh)</b></td>
+    <td><b>Correct form (English)</b></td>
   </tr>
   <tr></tr>
   <tr align="center">
