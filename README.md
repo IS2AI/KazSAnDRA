@@ -159,9 +159,9 @@
    - reviews with an original score of 3 were categorized as neutral and were excluded from the task.
 2. score classification (SC), where the objective was to predict the score of a review on a scale ranging from 1 to 5.
 
-## Data Preprocessing 🔧
+## Data Pre-Processing 🔧
 
-<p align = "justify">During the data preprocessing stage, the following steps were undertaken:</p>
+<p align = "justify">During the data pre-processing stage, the following steps were undertaken:</p>
 
 - Removal of emojis 🤓
 - Lowercasing all reviews 🔠 ➙ 🔡
